@@ -41,7 +41,7 @@ function ShareArea({ sx }) {
     }
     if (describtion.current.value) {
       try {
-        await axios.post("/posts", newPost);
+        await axios.post(`${BASE_URL}/posts`, newPost);
         window.location.reload();
       } catch (err) {
         console.log(err);
