@@ -1,6 +1,6 @@
 import {
   Route,
-  createBrowserRouter,
+  createHashRouter,
   createRoutesFromElements,
 } from "react-router-dom";
 
@@ -16,7 +16,7 @@ import ProfileDetails from "../components/profiledetails/ProfileDetails";
 import PrivateRoutes from "../utils/PrivateRoutes";
 import PublicRoutes from "../utils/PublicRoutes";
 
-const router = createBrowserRouter(
+const router = createHashRouter(
   createRoutesFromElements(
     <Route errorElement={<ErrorPage />}>
       <Route element={<PublicRoutes />}>
