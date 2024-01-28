@@ -20,12 +20,10 @@ function Feed({ sx }) {
   const [posts, setPosts] = useState([]);
 
   useEffect(() => {
-    // setTimeout(() => {
     const fetchPosts = async () => {
       const res = username
         ? await axios.get(`${BASE_URL}/posts/profile/` + username)
         : await axios.get(`${BASE_URL}/posts/timeline/` + user._id);
-      console.log(user);
       setPosts(
         res?.data?.sort((p1, p2) => {
           return new Date(p2.createdAt) - new Date(p1.createdAt);
@@ -33,7 +31,6 @@ function Feed({ sx }) {
       );
     };
     fetchPosts();
-    // }, 1000);
   }, [username, user._id]);
   const theme = useTheme();
   return (
