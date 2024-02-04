@@ -7,7 +7,7 @@ import Box from "@mui/material/Box";
 import LockOutlinedIcon from "@mui/icons-material/LockOutlined";
 import Typography from "@mui/material/Typography";
 import { ThemeProvider, useTheme } from "@mui/material/styles";
-import { CircularProgress, FormHelperText, styled } from "@mui/material";
+import { FormHelperText, styled } from "@mui/material";
 import { useNavigate } from "react-router-dom";
 import { useState } from "react";
 import { ValidiateProps } from "../../utils/validation";

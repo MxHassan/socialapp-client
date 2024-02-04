@@ -23,7 +23,7 @@ const ProfileDetails = () => {
       setUser(res.data);
     };
     username === currentUser.username ? setUser(currentUser) : fetchUser();
-  }, [username]);
+  }, [username, currentUser]);
 
   const theme = createTheme();
   return (

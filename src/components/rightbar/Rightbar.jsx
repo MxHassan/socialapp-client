@@ -1,4 +1,4 @@
-import { Box, Button, Drawer, IconButton, ThemeProvider } from "@mui/material";
+import { Box, Drawer, IconButton, ThemeProvider } from "@mui/material";
 import { styled, useTheme } from "@mui/material/styles";
 
 // project imports

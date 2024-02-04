@@ -8,10 +8,6 @@ import {
   HelpOutline,
   ViewTimeline,
   Forum,
-  AdminPanelSettings,
-  AccountCircle,
-  ManageAccounts,
-  Logout,
 } from "@mui/icons-material";
 // "Profile", "My Account", "Dashboard", "Logout"
 

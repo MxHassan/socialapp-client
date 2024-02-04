@@ -9,13 +9,7 @@ import {
   Avatar,
 } from "@mui/material";
 
-import {
-  Share,
-  Favorite,
-  ThumbUp,
-  MoreVert,
-  Delete,
-} from "@mui/icons-material";
+import { Share, Favorite, ThumbUp, Delete } from "@mui/icons-material";
 import { Link } from "react-router-dom";
 
 // project imports
@@ -28,8 +22,6 @@ import { BASE_URL } from "../../constants";
 import { REACT_APP_PUBLIC_FOLDER as PF } from "../../constants";
 
 const Post = ({ post }) => {
-  // const navigate = useNavigate();
-  // const location = useLocation();
   const [like, setLike] = useState(post.likes.length);
   const [isLiked, setIsLiked] = useState(false);
   const [user, setUser] = useState({});

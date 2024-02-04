@@ -1,12 +1,4 @@
-import {
-  Box,
-  Typography,
-  Badge,
-  MenuItem,
-  Menu,
-  Tooltip,
-  IconButton,
-} from "@mui/material";
+import { Box, Badge, MenuItem, Menu, Tooltip, IconButton } from "@mui/material";
 import { useNavigate } from "react-router-dom";
 
 import { Home, GroupAdd, MoreVert, Notifications } from "@mui/icons-material";
